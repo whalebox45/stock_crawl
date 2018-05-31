@@ -1,0 +1,8 @@
+LOAD DATA LOCAL INFILE 
+'F:\\stock_project_dev\\closing_data\\2018C\\20180212.csv' 
+REPLACE INTO TABLE `stock_eagle`.`stock_table` 
+CHARACTER SET utf8 FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n' 
+(`security_code`, `name`, `trade_volume`, `transaction`, `trade_value`,
+ `open_price`, `highest_price`, `lowest_price`, `closing_price`, `dir`, `price_change`,
+ `last_best_bid_price`, `last_best_bid_volume`, `last_best_ask_price`, `last_best_ask_volume`, `price_earning_ratio`)
+ SET `date`=20180212;

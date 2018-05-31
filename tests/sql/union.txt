@@ -1,0 +1,8 @@
+select * from (
+	select date,security_code,open_price,highest_price,lowest_price,closing_price
+		from stock_201804
+	union all
+	select date,security_code,open_price,highest_price,lowest_price,closing_price
+		from stock_201803
+) as v where v.security_code='1234'
+order by date;

@@ -1,0 +1,1 @@
+http://www.tse.com.tw/exchangeReport/BWIBBU_d?response=csv&date=20180423&selectType=ALL
