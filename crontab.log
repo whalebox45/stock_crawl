@@ -21,4 +21,4 @@
 # 
 # m h  dom mon dow   command
 
-0 15-23 * * * cd /home/stockproject/stock_project; bash ./cron_today.sh
+0 15-23 * * * bash ./cron_today.sh
